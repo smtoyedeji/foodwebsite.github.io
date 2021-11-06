@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway&family=Roboto&family=Zen+Kurenaido&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Zen Kurenaido";
+    font-size: 12px;
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+
+#home {
+    background-image: url("https://unsplash.com/photos/jpkfc5_d-DI/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjM2MjEyNjkw&force=true&w=1920");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+    height: 100vh;
+}
+
+.nav-link{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.nav-link h1{
+    font-style: italic;
+    text-transform: lowercase;
+    font-size: 1em;
+    color: #fff; 
+    padding: 0.5em;   
+}
+
+
+.nav-link a {
+    list-style-type: none;
+    color: #fff;
+    text-decoration-line: unset;
+    font-size: 1.5em;
+    margin-left: 1.5em;
+}
+
+.nav-link a:hover {
+    color: rgb(204, 186, 186);
+}
+
+.nav-link ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social-icon {
+    display: flex;
+    padding: 0.5em;
+    font-size: 1.2em;
+}
+.social-icon .fab {
+    margin-left: 0.5em;
+}
+
+.social-icon i:hover {
+    color: rgb(204, 186, 186);
+}
+
+#home h4{
+    color:rgb(230, 162, 17);
+    font-size: 3em;
+    text-align: center;
+    font-weight: 900;
+    margin-top: 6em;
+}
+
+#home p{
+    color:#fff;
+    font-size: 1.5em;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 2em;
+}
+.recipes{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    padding: 14px;
+    font-size: 18px;
+    margin-top: 2em;
+}
+
+.recipes .image{
+    grid-column: 1/10;
+}
+.recipes img {
+    width: 100%;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.recipes .intructions {
+    padding-top: 12px;
+    grid-column: 1/10;
+    text-align: center;
+}
+
+@media screen and (min-width: 620px){
+    body{
+        font-size: 16px;
+    }
+    .recipes{
+        padding: 32px;        
+    }
+    .recipes img {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    figcaption {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .recipes .image{
+        grid-column: 1/5;
+    }
+    .recipes .intructions {
+        grid-column: 5/10;
+        
+    }
+}
